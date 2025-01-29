@@ -4,6 +4,39 @@ version = "0.3.12"
 readme = "README.md"
 license = { file = "LICENSE" }
 requires-python = ">=3.9"
+dependencies = [
+    "aiohttp>=3.11.11",
+    "crewai>=0.1.24",
+    "einops>=0.8.0",
+    "gitpython>=3.1.44",
+    "griptape-black-forest",
+    "griptape-serper-driver-extension",
+    "griptape[all]>=1.2.0",
+    "kornia>=0.7.1",
+    "numpy>=1.25.0",
+    "openai>=1.60.2",
+    "pillow>=11.1.0",
+    "psutil>=6.1.1",
+    "pygithub>=2.5.0",
+    "python-dotenv>=1.0.1",
+    "pyyaml>=6.0.2",
+    "rich>=13.9.4",
+    "safetensors>=0.4.2",
+    "scipy>=1.13.1",
+    "sentencepiece>=0.2.0",
+    "soundfile>=0.13.1",
+    "spandrel>=0.4.1",
+    "tokenizers>=0.13.3",
+    "toml>=0.10.2",
+    "torch>=2.5.1",
+    "torchaudio>=2.5.1",
+    "torchsde>=0.2.6",
+    "torchvision>=0.20.1",
+    "tqdm>=4.67.1",
+    "transformers>=4.28.1",
+    "typer>=0.15.1",
+    "typing-extensions>=4.12.2",
+]
 
 [project.urls]
 homepage = "https://www.comfy.org/"
@@ -21,3 +54,7 @@ lint.select = [
   "F",
 ]
 exclude = ["*.ipynb"]
+
+[tool.uv.sources]
+griptape-black-forest = { git = "https://github.com/griptape-ai/griptape-black-forest.git" }
+griptape-serper-driver-extension = { git = "https://github.com/mertdeveci5/griptape-serper-driver-extension.git" }
