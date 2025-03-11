@@ -3,22 +3,31 @@ name = "ComfyUI"
 version = "0.3.24"
 readme = "README.md"
 license = { file = "LICENSE" }
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 dependencies = [
     "aiohttp>=3.11.11",
+    "attrs>=25.1.0",
+    "av>=14.2.0",
+    "chardet>=5.2.0",
+    "comfyui-frontend-package>=1.12.6",
     "crewai>=0.1.24",
     "einops>=0.8.0",
     "gitpython>=3.1.44",
     "griptape-black-forest",
     "griptape-serper-driver-extension",
-    "griptape[all]>=1.2.0",
+    "griptape[all]>=1.4.0",
+    "huggingface-hub>0.20",
     "kornia>=0.7.1",
+    "litellm>=1.10.0",
+    "markitdown>=0.0.1",
+    "matrix-client==0.4.0",
     "numpy>=1.25.0",
-    "openai>=1.60.2",
+    "openai>=1.58.1",
     "pillow>=11.1.0",
+    "poetry==1.8.5",
     "psutil>=6.1.1",
     "pygithub>=2.5.0",
-    "python-dotenv>=1.0.1",
+    "python-dotenv>=1.0.0",
     "pyyaml>=6.0.2",
     "rich>=13.9.4",
     "safetensors>=0.4.2",
@@ -36,6 +45,7 @@ dependencies = [
     "transformers>=4.28.1",
     "typer>=0.15.1",
     "typing-extensions>=4.12.2",
+    "uv>=0.5.24",
 ]
 
 [project.urls]
