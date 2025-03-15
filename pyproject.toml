@@ -3,7 +3,7 @@ name = "ComfyUI"
 version = "0.3.24"
 readme = "README.md"
 license = { file = "LICENSE" }
-requires-python = ">=3.10"
+requires-python = ">=3.11"
 dependencies = [
     "aiohttp>=3.11.11",
     "attrs>=25.1.0",
@@ -21,7 +21,10 @@ dependencies = [
     "litellm>=1.10.0",
     "markitdown>=0.0.1",
     "matrix-client==0.4.0",
+    "nltk>=3.9.1",
     "numpy>=1.25.0",
+    "ollama>=0.4.7",
+    "olmocr>=0.1.58",
     "openai>=1.58.1",
     "pillow>=11.1.0",
     "poetry==1.8.5",
@@ -32,6 +35,7 @@ dependencies = [
     "rich>=13.9.4",
     "safetensors>=0.4.2",
     "scipy>=1.13.1",
+    "sentence-transformers>=3.4.1",
     "sentencepiece>=0.2.0",
     "soundfile>=0.13.1",
     "spandrel>=0.4.1",
